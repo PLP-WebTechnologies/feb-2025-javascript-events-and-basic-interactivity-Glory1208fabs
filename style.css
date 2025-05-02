@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+  background: #f0f4f8;
+}
+h1, h2 {
+  text-align: center;
+}
+button, input[type="submit"] {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  background-color: #0077cc;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+button:hover, input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+#hover-box {
+  width: 150px;
+  height: 150px;
+  margin: 1rem auto;
+  background-color: #b0d4f1;
+  border-radius: 8px;
+  line-height: 150px;
+  text-align: center;
+  color: #034a77;
+  font-weight: bold;
+  user-select: none;
+}
+#hover-box.hovered {
+  background-color: #045a99;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+#gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+.tab-buttons button.active {
+  background-color: #0077cc;
+  color: white;
+}
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 0 4px 4px 4px;
+  background-color: white;
+}
+form {
+  background: #fff;
+  padding: 1rem;
+  max-width: 400px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+input.invalid {
+  border-color: red;
+}
+small {
+  color: red;
+  display: none;
+}
+small.visible {
+  display: block;
+}
+#secret-message {
+  text-align: center;
+  margin: 1rem auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #009933;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#secret-message.visible {
+  opacity: 1;
+}
